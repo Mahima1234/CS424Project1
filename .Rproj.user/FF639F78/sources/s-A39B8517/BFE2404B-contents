@@ -72,10 +72,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "halstedEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("HalstedEntries", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("HalstedEntriesTable", height = 100)
                )
              ), 
@@ -84,10 +84,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "ohareEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("OhareEntries", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("OhareEntriesTable", height = 100)
                )
              ), 
@@ -96,10 +96,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "cumberlandEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("CumberlandEntries", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("CumberlandEntriesTable", height = 100)
                )
              ), 
@@ -112,10 +112,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "halstedEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("HalstedEntriesDash", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("HalstedEntriesTableDash", height = 100)
                )
              ), 
@@ -124,10 +124,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "ohareEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("OhareEntriesDash", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("OhareEntriesTableDash", height = 100)
                )
              ), 
@@ -136,10 +136,10 @@ ui <- dashboardPage(
       column(3,
              fluidRow(
                id = "cumberlandEntryBox",
-               box(title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
                    plotOutput("CumberlandEntriesDash", height = 150),
                ),
-               box( title = "", solidHeader = TRUE, status = "primary", width = 12,
+               box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
                     DT::dataTableOutput("CumberlandEntriesTableDash", height = 100)
                )
              ), 
