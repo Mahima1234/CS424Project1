@@ -75,38 +75,44 @@ ui <- dashboardPage(
           fluidRow(
             id = "halstedEntryBox",
             #Bar graph that shows all of the entries over the years at UIC Halsted
-            box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
-              plotOutput("HalstedEntries", height = 150),
+            box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 20,
+              plotOutput("HalstedEntries", height = 300),
             ),
             #Chart that shows the data behind the bar graph above
-            box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
-              DT::dataTableOutput("HalstedEntriesTable", height = 100)
+            box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 20,
+              DT::dataTableOutput("HalstedEntriesTable", height = 300)
             )
           ), 
+        ),
+        column(1,
+               #Spacer Column  
         ),
         column(3,
                fluidRow(
                  id = "ohareEntryBox",
                  #Bar graph that shows all of the entries over the years at O'Hare
-                 box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
-                     plotOutput("OhareEntries", height = 150),
+                 box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 20,
+                     plotOutput("OhareEntries", height = 300),
                  ),
                  #Chart that shows the data behind the bar graph above
-                 box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
-                      DT::dataTableOutput("OhareEntriesTable", height = 100)
+                 box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 20,
+                      DT::dataTableOutput("OhareEntriesTable", height = 300)
                  )
                ), 
+        ),
+        column(1,
+               #Spacer Column  
         ),
         column(3,
                fluidRow(
                  id = "cumberlandEntryBox",
                  #Bar graph that shows all of the entries over the years at Cumberland
-                 box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
-                     plotOutput("CumberlandEntries", height = 150),
+                 box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 20,
+                     plotOutput("CumberlandEntries", height = 300),
                  ),
                  #Chart that shows the data behind the bar graph above
-                 box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
-                      DT::dataTableOutput("CumberlandEntriesTable", height = 100)
+                 box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 20,
+                      DT::dataTableOutput("CumberlandEntriesTable", height = 300)
                  )
                ), 
         ),
@@ -120,12 +126,12 @@ ui <- dashboardPage(
                fluidRow(
                  id = "halstedEntryBox",
                  #Bar graph that shows all of the entries over the years at UIC-Halsted
-                 box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
-                     plotOutput("HalstedEntriesDash", height = 150),
+                 box(title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 20,
+                     plotOutput("HalstedEntriesDash", height = 300),
                  ),
                  #Chart that shows the data behind the bar graph above
-                 box( title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 12,
-                      DT::dataTableOutput("HalstedEntriesTableDash", height = 100)
+                 box( title = "All Entries For UIC-Halsted", solidHeader = TRUE, status = "primary", width = 20,
+                      DT::dataTableOutput("HalstedEntriesTableDash", height = 300)
                  )
                ), 
         ),
@@ -134,12 +140,12 @@ ui <- dashboardPage(
                fluidRow(
                  id = "ohareEntryBox",
                  #Bar graph that shows all of the entries over the years at O'Hare
-                 box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
-                     plotOutput("OhareEntriesDash", height = 150),
+                 box(title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 20,
+                     plotOutput("OhareEntriesDash", height = 300),
                  ),
                  #Chart that shows the data behind the bar graph above
-                 box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 12,
-                      DT::dataTableOutput("OhareEntriesTableDash", height = 100)
+                 box( title = "All Entries For O'Hare", solidHeader = TRUE, status = "primary", width = 20,
+                      DT::dataTableOutput("OhareEntriesTableDash", height = 300)
                  )
                ), 
         ),
@@ -148,12 +154,12 @@ ui <- dashboardPage(
                fluidRow(
                  id = "cumberlandEntryBox",
                  #Bar graph that shows all of the entries over the years at Cumberland
-                 box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
-                     plotOutput("CumberlandEntriesDash", height = 150),
+                 box(title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 20,
+                     plotOutput("CumberlandEntriesDash", height = 300),
                  ),
                  #Chart that shows the data behind the bar graph above
-                 box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 12,
-                      DT::dataTableOutput("CumberlandEntriesTableDash", height = 100)
+                 box( title = "All Entries For Cumberland", solidHeader = TRUE, status = "primary", width = 20,
+                      DT::dataTableOutput("CumberlandEntriesTableDash", height = 300)
                  )
                ), 
         ),
@@ -183,28 +189,30 @@ ui <- dashboardPage(
                #This row has the bar graph for every single entry in a user specified year at the user specified stop (left-most)
                fluidRow(
                  id = "DayEntriesBoxOne",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayEntriesOne", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayEntriesOne", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in months in a user specified year at a user specified stop (left-most)
                fluidRow(
                  id = "MonthEntriesBoxOne",
-                 box(status = "primary", width = 12,
-                     plotOutput("MonthEntriesOne", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("MonthEntriesOne", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in days of the week in a user specified year at a user specified stop (left-most)
                fluidRow(
                  id = "DayOfTheWeekEntriesBoxOne",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayOfTheWeekEntriesOne", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayOfTheWeekEntriesOne", height = 300),
                  )
                ),
              
              ), 
       ),
-      
+      column(1,
+          #Spacer Column 
+      ),
       column(3,
              fluidRow(
                id = "dayEntryBoxTwo",
@@ -225,28 +233,30 @@ ui <- dashboardPage(
                #This row has the bar graph for every single entry in a user specified year at the user specified stop (middle)
                fluidRow(
                  id = "DayEntriesBoxTwo",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayEntriesTwo", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayEntriesTwo", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in months in a user specified year at a user specified stop (middle)
                fluidRow(
                  id = "MonthEntriesBoxTwo",
-                 box(status = "primary", width = 12,
-                     plotOutput("MonthEntriesTwo", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("MonthEntriesTwo", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in days of the week in a user specified year at a user specified stop (middle)
                fluidRow(
                  id = "DayOfTheWeekEntriesBoxTwo",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayOfTheWeekEntriesTwo", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayOfTheWeekEntriesTwo", height = 300),
                  )
                ),
 
              ), 
       ),
-    
+      column(1,
+           #Spacer Column  
+      ),
       column(3,
              fluidRow(
                id = "dayEntryBoxThree",
@@ -267,22 +277,22 @@ ui <- dashboardPage(
                #This row has the bar graph for every single entry in a user specified year at the user specified stop (right-most)
                fluidRow(
                  id = "DayEntriesBoxThree",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayEntriesThree", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayEntriesThree", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in months in a user specified year at a user specified stop (right-most)
                fluidRow(
                  id = "MonthEntriesBoxThree",
-                 box(status = "primary", width = 12,
-                     plotOutput("MonthEntriesThree", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("MonthEntriesThree", height = 300),
                  )
                ),
                #This row has the bar graph for every single entry split in days of the week in a user specified year at a user specified stop (right-most)
                fluidRow(
                  id = "DayOfTheWeekEntriesBoxThree",
-                 box(status = "primary", width = 12,
-                     plotOutput("DayOfTheWeekEntriesThree", height = 150),
+                 box(status = "primary", width = 20,
+                     plotOutput("DayOfTheWeekEntriesThree", height = 300),
                  )
                ),
              ), 
@@ -313,28 +323,30 @@ ui <- dashboardPage(
                #This row has the table for every single entry in a user specified year at the user specified stop (left-most)
                fluidRow(
                  id = "DayEntriesBoxTableOne",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("DayEntriesTableOne", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("DayEntriesTableOne", height = 300)
                  )
                ),
                #This row has the table for every single entry split in months in a user specified year at a user specified stop (left-most)
                fluidRow(
                  id = "MonthEntriesBoxTableOne",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("MonthEntriesTableOne", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("MonthEntriesTableOne", height = 300)
                  )
                ),
                #This row has the table for every single entry split in days of the week in a user specified year at a user specified stop (left-most)
                fluidRow(
                  id = "DayOfTheWeekEntriesBoxTableOne",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("DayOfTheWeekEntriesTableOne", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("DayOfTheWeekEntriesTableOne", height = 300)
                  )
                ),
              )
         
       ),
-    
+      column(1,
+             #Spacer Column  
+      ),
       column(3,
              fluidRow(
                fluidRow(
@@ -355,28 +367,30 @@ ui <- dashboardPage(
                #This row has the table for every single entry in a user specified year at the user specified stop (middle)
                fluidRow(
                  id = "DayEntriesBoxTableTwo",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("DayEntriesTableTwo", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("DayEntriesTableTwo", height = 300)
                  )
                ),
                #This row has the bar graph for every single entry split in months in a user specified year at a user specified stop (middle)
                fluidRow(
                  id = "MonthEntriesBoxTableTwo",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("MonthEntriesTableTwo", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("MonthEntriesTableTwo", height = 300)
                  )
                ),
                #This row has the table for every single entry split in days of the week in a user specified year at a user specified stop (middle)
                fluidRow(
                  id = "DayOfTheWeekEntriesBoxTableTwo",
-                 box(status = "primary", width = 12,
-                     DT::dataTableOutput("DayOfTheWeekEntriesTableTwo", height = 100)
+                 box(status = "primary", width = 20,
+                     DT::dataTableOutput("DayOfTheWeekEntriesTableTwo", height = 300)
                  )
                ),
              )
              
       ),
-
+      column(1,
+             #Spacer Column  
+      ),
       column(3,
         fluidRow(
           fluidRow(
@@ -396,22 +410,22 @@ ui <- dashboardPage(
           #This row has the table for every single entry in a user specified year at the user specified stop (right-most)
           fluidRow(
             id = "DayEntriesBoxTableThree",
-            box(status = "primary", width = 12,
-                DT::dataTableOutput("DayEntriesTableThree", height = 100)
+            box(status = "primary", width = 20,
+                DT::dataTableOutput("DayEntriesTableThree", height = 300)
             )
           ),
           #This row has the bar graph for every single entry split in months in a user specified year at a user specified stop (right-most)
           fluidRow(
             id = "MonthEntriesBoxTableThree",
-            box(status = "primary", width = 12,
-                DT::dataTableOutput("MonthEntriesTableThree", height = 100)
+            box(status = "primary", width = 20,
+                DT::dataTableOutput("MonthEntriesTableThree", height = 300)
             )
           ),
           #This row has the table for every single entry split in days of the week in a user specified year at a user specified stop (right-most)
           fluidRow(
             id = "DayOfTheWeekEntriesBoxTableThree",
-            box(status = "primary", width = 12,
-                DT::dataTableOutput("DayOfTheWeekEntriesTableThree", height = 100)
+            box(status = "primary", width = 20,
+                DT::dataTableOutput("DayOfTheWeekEntriesTableThree", height = 300)
             )
           ),
         )
@@ -465,7 +479,7 @@ server <- function(input, output){
         UICHalsted[c(6,5)]
         
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   output$HalstedEntriesTableDash <- DT::renderDataTable(
@@ -474,7 +488,7 @@ server <- function(input, output){
         UICHalsted[c(6,5)]
         
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   #datatables for entries of 2001-2021 at O'Hare
@@ -484,7 +498,7 @@ server <- function(input, output){
         Ohare[c(6,5)]
         
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   output$OhareEntriesTableDash <- DT::renderDataTable(
@@ -493,7 +507,7 @@ server <- function(input, output){
         Ohare[c(6,5)]
         
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   #datatables for entries of 2001-2021 at Cumberland
@@ -502,7 +516,7 @@ server <- function(input, output){
       {
         Cumberland[c(6,5)]
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   output$CumberlandEntriesTableDash <- DT::renderDataTable(
@@ -510,7 +524,7 @@ server <- function(input, output){
       {
         Cumberland[c(6,5)]
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
 
@@ -678,7 +692,7 @@ server <- function(input, output){
       stop <- stopReactiveOneTable()[c(6,5)]
     },
     #disabled searching, changing length, and displaying row names
-    options = list(searching = FALSE,lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+    options = list(searching = FALSE,lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   #datatable for monthly entries (left-most)
@@ -694,7 +708,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE 
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE 
     )
   })
   #datatable for day of the week entries (left-most)
@@ -710,7 +724,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Day of the Week", "Entries")  
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Day of the Week", "Entries")  
     )
   )
   #Allows the users to toggle the table's visibility using the checkboxes
@@ -749,7 +763,7 @@ server <- function(input, output){
         stop <- stopReactiveTwoTable()[c(6,5)]
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   #datatable for monthly entries (middle)
@@ -764,7 +778,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE 
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE 
     )
   )
   #datatable for day of the week entries (middle)
@@ -779,7 +793,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Day of the Week", "Entries") 
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Day of the Week", "Entries") 
     )
   )
   #Allows the users to toggle the table's visibility using the checkboxes
@@ -818,7 +832,7 @@ server <- function(input, output){
         stop <- stopReactiveThreeTable()[c(6,5)]
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
     )
   )
   #datatable for monthly entries (right-most)
@@ -833,7 +847,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE 
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE 
     )
   )
   #datatable for day of the week entries (right-most)
@@ -848,7 +862,7 @@ server <- function(input, output){
         as.data.frame(df)
       },
       #disabled searching, changing length, and displaying row names
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 1), rownames = FALSE, colnames = c("Day of the Week", "Entries") 
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Day of the Week", "Entries") 
     )
   )
   #Allows the users to toggle the table's visibility using the checkboxes
