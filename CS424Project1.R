@@ -54,7 +54,7 @@ ui <- dashboardPage(
                      menuItem("About", tabName = "about", icon = NULL)
                      )
   ),
-  
+   
   dashboardBody(
     #ShinyJS used to hide and view the plots and charts
     useShinyjs(),
