@@ -3,7 +3,7 @@
     "path": "C:/Users/mahim/OneDrive - University of Illinois at Chicago/CS424Project1/CS424Project1.R",
     "project_path": "CS424Project1.R",
     "type": "r_source",
-    "hash": "367891008",
+    "hash": "1825527975",
     "contents": "",
     "dirty": false,
     "created": 1644367675277.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "77,56",
-        "scrollLine": "69"
+        "cursorPosition": "436,148",
+        "scrollLine": "428"
     },
     "folds": "",
-    "lastKnownWriteTime": 1644705356,
+    "lastKnownWriteTime": 1644712643,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1644705356020,
+    "last_content_update": 1644712643728,
     "read_only": false,
     "read_only_alternatives": []
 }

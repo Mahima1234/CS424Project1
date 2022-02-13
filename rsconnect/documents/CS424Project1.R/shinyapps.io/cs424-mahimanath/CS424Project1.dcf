@@ -5,9 +5,9 @@ account: cs424-mahimanath
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5597846
-bundleId: 5573101
+bundleId: 5573153
 url: https://cs424-mahimanath.shinyapps.io/CS424Project1/
-when: 1644703455.53508
-lastSyncTime: 1644703455.53508
+when: 1644705373.68513
+lastSyncTime: 1644705373.68513
 asMultiple: FALSE
 asStatic: FALSE
