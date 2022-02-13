@@ -24,7 +24,7 @@ Cumberland <- subset(CTAData, station_id == 40230)
 
 #Vector for dropdown menu to change years
 years<-c(2001:2021)
-#Vector for dropdown menu to change stops
+#Vector for dropdown menu to change stops 
 stops <- c("UIC-Halsted", "O'Hare Airport", "Cumberland")
 
 #UI
